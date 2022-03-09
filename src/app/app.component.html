@@ -1,0 +1,29 @@
+<hello name="{{ name }}"></hello>
+<p>
+I 💙 Angular!
+</p>
+<img src="https://www.fondoshd.mx/wallpapers/resoluciones/13/fondo-de-pantalla-de-gato-gracioso_1280x1024_436.jpg" width="142" height="142" style="border:5px solid black">
+<img src="https://c.tenor.com/tIPDs-HGMHkAAAAM/cat-catto.gif" width="142" height="142" style="border:5px solid black"width="142" height="142" style="border:5px solid black">
+<img src="https://c.tenor.com/zNmd9nLLAlQAAAAM/cat-gato.gif" width="142" height="142" style="border:5px solid black">
+<img src="https://c.tenor.com/sfCV637KtBQAAAAM/gato-wasap-gato-instagram.gif" width="142" height="142" style="border:5px solid black">
+<img src="https://c.tenor.com/rkY5QA5c3VAAAAAM/gato-digitando.gif" width="142" height="142" style="border:5px solid black">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=1">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=2">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=3">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=4">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=5">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=6">
+<img src="https://thecatapi.com/api/images/get?format=src&type=gif&results_per_page=7">
+<h1> Gato o Perro App </h1>
+<p> Qué prefieres? </p>
+<input [(ngModel)]="animal" type="text">
+<img *ngIf="animal === 'gato'" src="https://thecatapi.com/api/images/get?format=src&type=gif">
+<img *ngIf="animal === 'perro'" src="https://thedogapi.com/api/images/get?format=src&type=gif">
+<h1>¿Te ha gustado NgGirls hasta el momento?</h1>
+<h1>{{ question }}</h1>
+<button>Sí</button>
+<button>No</button>
+<button (click)="answer('Si')"> Si </button>
+<h1> {{ response }} </h1>
+
+
